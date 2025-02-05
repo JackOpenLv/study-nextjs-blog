@@ -7,7 +7,7 @@ export default function Page() {
   }
     return (
     <main>
-      <ol className='list-decimal'>
+      {/* <ol className='list-decimal'>
         {blogs.map((blogInfo) => {
             return (
                 <li key={blogInfo.id}>
@@ -22,7 +22,7 @@ export default function Page() {
                 </li>
             );
         })}
-      </ol>
+      </ol> */}
     </main>
     );
 }
