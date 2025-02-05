@@ -29,7 +29,7 @@ function Title() {
               height={35}
               alt="ming's logo"
              />
-            <p>Ming's Zone</p>
+            <p>{"Ming's Zone"}</p>
         </Link>
       </>
     );
