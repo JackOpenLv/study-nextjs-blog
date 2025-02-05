@@ -2,8 +2,8 @@ import Header from '@/app/ui/common/header';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ming's blogs",
-  description: "A list of Ming's blogs",
+  title: "Ming's produces",
+  description: "A list of Ming's produces",
 };
 
 export default function Layout({ children } : { children:React.ReactNode }) {

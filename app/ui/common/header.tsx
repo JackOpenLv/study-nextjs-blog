@@ -2,9 +2,23 @@ import Link from "next/link";
 import Image from "next/image";
 
 
+const NavList = [
+  {href: "/blogs", title: "Blogs"},
+  {href: "/produces", title: "Produces"},
+];
+
 export default function Header() {
     return (
       <header className="flex flex-row border-b border-0 border-solid w-full space-x-10 p-3">
+        <Title />
+        <NavArray />
+      </header>
+    );
+}
+
+function Title() {
+    return (
+      <>
         <Link
         href="/"
         className="flex items-center text-3xl space-x-3"
@@ -17,32 +31,17 @@ export default function Header() {
              />
             <p>Ming's Zone</p>
         </Link>
-        <Link
-          href='/blogs'
-          className="flex items-center text-xl hover:text-blue-500"
-        >
-        Blogs
-        </Link>
-        <Link
-          href='/produces'
-          className="flex items-center text-xl hover:text-blue-500"
-        >
-          Produces
-        </Link>
-      </header>
+      </>
     );
 }
 
-function Title() {
-    return (
-      <></>
-    );
-}
-
-function MainNav() {
-    return (
-      <nav>
-        
-      </nav>
-    );
+function NavArray() {
+  return NavList.map((navInfo) => {
+    return <Link
+      href={navInfo.href}
+      className="flex items-center text-xl hover:text-blue-500"
+    >
+    {navInfo.title}
+    </Link>;
+  });
 }
