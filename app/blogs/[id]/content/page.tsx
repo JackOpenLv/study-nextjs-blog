@@ -9,6 +9,6 @@ export default async function Page(props: {params: Promise<{id:string}>}) {
     );
 }
 
-function contents(id:string) {
-    return blogs.filter((bloginfo) => bloginfo.id === id);
-}
+// function contents(id:string) {
+//     return blogs.filter((bloginfo) => bloginfo.id === id);
+// }
