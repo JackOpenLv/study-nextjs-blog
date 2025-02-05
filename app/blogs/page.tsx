@@ -1,5 +1,4 @@
 import {blogs} from '@/app/libs/placehold-data';
-import Link from 'next/link';
 
 export default function Page() {
   if (blogs.length == 0) {
