@@ -3,8 +3,8 @@ import Image from "next/image";
 
 
 const NavList = [
-  {href: "/blogs", title: "Blogs"},
-  {href: "/produces", title: "Produces"},
+  {id:"0", href: "/blogs", title: "Blogs"},
+  {id:"1", href: "/produces", title: "Produces"},
 ];
 
 export default function Header() {
@@ -40,6 +40,7 @@ function NavArray() {
     return <Link
       href={navInfo.href}
       className="flex items-center text-xl hover:text-blue-500"
+      key={navInfo.id}
     >
     {navInfo.title}
     </Link>;
