@@ -9,3 +9,7 @@ export const blogs = [
 export const produces = [
     {id: "c4ca4238", produce_name: "baby-daily-recorder-describe", type: "iOS-app", describe: "The describe of baby daily recorder."},
 ];
+
+export const privacies = [
+    {id:"c81e728d", privacy_name: "baby-daily-records-privacy-protocol.md", describe: "privacy of baby daily records."},
+];
