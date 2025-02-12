@@ -12,4 +12,5 @@ export const produces = [
 
 export const privacies = [
     {id:"c81e728d", privacy_name: "baby-daily-records-privacy-protocol.md", describe: "privacy of baby daily records."},
+    {id:"1718d579", privacy_name: "en/baby-daily-records-privacy-protocol-en.md", describe: "privacy for english of baby daily records"},
 ];
