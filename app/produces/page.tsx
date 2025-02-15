@@ -15,7 +15,7 @@ export default function Page() {
                    href={`/produces/${produce_info.id}`}
                    className="text-xl flex felx-row items-center space-x-10 underline hover:text-blue-500 visited:text-rebeccapurple-500 after:content-['➡️']"
                     >
-                    <p>{produce_info.produce_name}</p>
+                    <p>{produce_info.title}</p>
                     <p>{`Type: ${produce_info.type}`}</p>
                   </Link>
                 </li>
